@@ -1,0 +1,14 @@
+/* Base & General */
+@import url('base.css');
+
+/* Sections */
+@import url('hero.css');
+@import url('gallery.css');
+@import url('about.css');
+@import url('pricing.css');
+@import url('contact.css');
+@import url('news.css');
+
+/* Components */
+@import url('navbar.css');
+@import url('footer.css');

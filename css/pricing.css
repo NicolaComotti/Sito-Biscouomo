@@ -1,0 +1,328 @@
+/* Info Banner */
+.subscription-info {
+    background: linear-gradient(135deg, var(--gold-color), #f39c12);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
+}
+
+.subscription-info i {
+    font-size: 2.2rem;
+    opacity: 0.9;
+}
+
+.subscription-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.subscription-info div>strong {
+    font-size: 1.2rem;
+}
+
+.subscription-info span {
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+/* Card */
+.container-prezzi {
+    justify-content: center;
+}
+
+.pricing-card-compact {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    height: calc(100% - 20px);
+}
+
+.pricing-card-compact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.pricing-card-compact.featured {
+    border: 2px solid var(--gold-color);
+}
+
+.pricing-card-compact.course {
+    border: 2px solid var(--primary-color);
+}
+
+.featured-tag {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background: linear-gradient(45deg, var(--gold-color), #f39c12);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Header */
+.card-header-compact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.service-icon-small {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: white;
+    flex-shrink: 0;
+}
+
+.service-icon-small.scissors {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.service-icon-small.beard {
+    background: linear-gradient(135deg, var(--secondary-color), #dc3545);
+}
+
+.service-icon-small.combo {
+    background: linear-gradient(135deg, var(--gold-color), #f39c12);
+}
+
+.service-icon-small.color {
+    background: linear-gradient(135deg, #e83e8c, #6f42c1);
+}
+
+.service-icon-small.education {
+    background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+.card-header-compact h5 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    line-height: 1.2;
+}
+
+.card-header-compact small {
+    color: #6c757d;
+    font-size: 0.8rem;
+}
+
+/* Prezzi Grid */
+.prices-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prices-grid.single-only {
+    padding: 15px 0;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    gap: 10px;
+}
+
+/* .price-item:hover {
+    background: #e9ecef;
+} */
+
+.price-item.abbonamento {
+    background: rgba(0, 108, 186, 0.05);
+    border: 1px solid rgba(0, 108, 186, 0.2);
+}
+
+.price-item.gold-bg {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(243, 156, 18, 0.1));
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.price-item.single-service {
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.label {
+    font-size: 0.85rem;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.badge-small {
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.badge-small.singolo {
+    background: #6c757d;
+}
+
+.badge-small.base {
+    background: var(--primary-color);
+}
+
+.badge-small.gold {
+    background: var(--gold-color);
+}
+
+.old-price-small {
+    font-size: 0.85rem;
+    color: #dc3545;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    font-family: 'Playfair Display', serif;
+}
+
+.price.large {
+    font-size: 1.8rem;
+}
+
+.sconto {
+    background: #28a745;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Corso */
+.course-compact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.course-features-compact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.course-features-compact span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--dark-color);
+}
+
+.course-features-compact i {
+    color: #28a745;
+    font-size: 1rem;
+}
+
+.course-price-compact {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.price-label {
+    display: block;
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.btn-compact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-compact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 108, 186, 0.3);
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 1199px) {
+    .col-xl-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .col-lg-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-card-compact {
+        padding: 15px;
+    }
+
+    .subscription-info {
+        justify-content: flex-start;
+        gap: 25px;
+    }
+
+    .card-header-compact h5 {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .price.large {
+        font-size: 1.5rem;
+    }
+}

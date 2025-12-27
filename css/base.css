@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'BunyaPersonalRegular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bunya PERSONAL Regular'), url('../fonts/Bunya-Regular_PERSONAL.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'ClarendonBoldCondensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Clarendon Bold Condensed'), url('../fonts/CLRNDNBC.TTF') format('truetype');
+}
+
+:root {
+    --primary-color: #006cba;
+    --secondary-color: #b92929;
+    --dark-color: #1a1a1a;
+    --light-color: #f8f9fa;
+    --gold-color: #d4af37;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.bunyaFont {
+    font-family: BunyaPersonalRegular;
+}
+
+.vintageFont {
+    font-family: ClarendonBoldCondensed;
+}
+
+/* Sezioni */
+section {
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.section-title .subtitle {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transform-origin: left;
+    transform: scaleX(0);
+    z-index: 9999;
+    transition: transform 0.1s ease;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    section {
+        padding: 60px 0;
+    }
+}
